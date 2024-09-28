@@ -1,0 +1,54 @@
+North Pole
+Ring: 89, result: 5686289, time spent: 6.18480658531189
+Ring: 88, result: 20246825, time spent: 13.037174701690674
+Ring: 87, result: 35313872, time spent: 19.89671778678894
+Ring: 86, result: 46752949, time spent: 28.5495388507843
+Ring: 85, result: 61907677, time spent: 37.50079274177551
+Ring: 84, result: 75076677, time spent: 47.16949439048767
+Ring: 83, result: 84427018, time spent: 59.3155951499939
+Ring: 82, result: 94972759, time spent: 74.0500214099884
+Ring: 81, result: 102718860, time spent: 93.36154985427856
+Ring: 80, result: 109604553, time spent: 105.11168074607849
+
+
+Ring: 89, result: 5686289, area: 1553524759 m^2
+Ring: 88, result: 20246825, area: 5531541561 m^2
+Ring: 87, result: 35313872, area: 9647939894 m^2
+Ring: 86, result: 46752949, area: 12773157297 m^2
+Ring: 85, result: 61907677, area: 16913510552 m^2
+Ring: 84, result: 75076677, area: 20511352230 m^2
+Ring: 83, result: 84427018, area: 23065915716 m^2
+Ring: 82, result: 94972759, area: 25947068916 m^2
+Ring: 81, result: 102718860, area: 28063345399 m^2
+Ring: 80, result: 109604553, area: 29944553787 m^2
+
+
+South Pole
+Ring: 89, result: 2693399, area: 735851103.0667303, time spent: 8.503651857376099
+Ring: 88, result: 11123779, area: 3039076292.602964, time spent: 28.777647256851196
+Ring: 87, result: 24177331, area: 6605376955.126015, time spent: 49.56983017921448
+Ring: 86, result: 13971938, area: 3817208660.6106133, time spent: 67.96414351463318
+Ring: 85, result: 15525892, area: 4241757257.0179625, time spent: 84.25037455558777
+Ring: 84, result: 13977364, area: 3818691073.0141377, time spent: 100.97632956504822
+Ring: 83, result: 10304842, area: 2815338296.5644417, time spent: 116.02654027938843
+Ring: 82, result: 9710748, area: 2653028618.263779, time spent: 135.7902340888977
+Ring: 81, result: 9171487, area: 2505699610.68233, time spent: 154.12103915214539
+Ring: 80, result: 6658680, area: 1819187213.9881153, time spent: 174.3712604045868
+
+Cumulative
+Ring: 89, result: 2693399, area: 735851103.0667303, time spent: 2.697667360305786
+Ring: 88, result: 13817178, area: 3774927395.669694, time spent: 8.704442501068115
+Ring: 87, result: 37994509, area: 10380304350.79571, time spent: 12.859107971191406
+Ring: 86, result: 51966447, area: 14197513011.406322, time spent: 18.64097762107849
+Ring: 85, result: 67492339, area: 18439270268.424286, time spent: 23.57011866569519
+Ring: 84, result: 81469703, area: 22257961341.438423, time spent: 31.571929454803467
+Ring: 83, result: 91774545, area: 25073299638.002865, time spent: 39.179221391677856
+Ring: 82, result: 101485293, area: 27726328256.266644, time spent: 50.89517521858215
+Ring: 81, result: 110656780, area: 30232027866.948975, time spent: 60.291401624679565
+Ring: 80, result: 117315460, area: 32051215080.937088, time spent: 73.59325194358826
+
+-> Results showed that there are some discrepancy between the results of cumulative and discrete ones, cumulative results are chosen, though no tests between 
+thes 2 methods' accuracy was done, it was simply a choice by time of execution and that cumulative may have less floating point error
+
+
+
