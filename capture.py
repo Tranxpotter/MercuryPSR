@@ -1,8 +1,12 @@
 import pyautogui
 import keyboard
-import threading
 import time
-import playsound
+
+save_path = "data_files/south_pole/"
+
+# Usage: Normal mode - WASD for movement, space to capture screen
+#        Continuous mode - WASD for changing movement direction, shift to capture and move
+#        Press E to switch betweeen normal and continuous mode, Press Q to toggle the continuous capture
 
 pyautogui.FAILSAFE = False
 
@@ -19,8 +23,8 @@ VERTICAL_SCROLL = 7
 CAPTURE_SIZE = CAPTURE_WIDTH, CAPTURE_HEIGHT = (SCROLL * HORIZONTAL_SCROLL, SCROLL * VERTICAL_SCROLL)
 
 
-save_path = "data_files/south_pole/"
-lat_lon_path = "data_files/south_pole_log/"
+
+# lat_lon_path = "data_files/south_pole_log/"
 
 
 class Capture:
