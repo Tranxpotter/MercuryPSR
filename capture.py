@@ -1,8 +1,9 @@
 import pyautogui
 import keyboard
+import pynput
 import time
 
-save_path = "data_files/south_pole/"
+save_path = "data_files/images/"
 
 # Usage: Normal mode - WASD for movement, space to capture screen
 #        Continuous mode - WASD for changing movement direction, shift to capture and move
@@ -35,14 +36,27 @@ class Capture:
         self.cont_capturing_mode = False
         self.cont_capturing_direction = None
         
-        keyboard.add_hotkey("w", lambda:self.on_movement_key("w"))
-        keyboard.add_hotkey("s", lambda:self.on_movement_key("s"))
-        keyboard.add_hotkey("a", lambda:self.on_movement_key("a"))
-        keyboard.add_hotkey("d", lambda:self.on_movement_key("d"))
-        keyboard.add_hotkey("space", self.capture)
-        keyboard.add_hotkey("q", self.toggle_cont_capturing)
-        keyboard.add_hotkey("e", self.toggle_cont_capturing_mode)
-        keyboard.add_hotkey("r", self.display)
+        kb = pynput.keyboard.GlobalHotKeys(
+            {
+                "w" : lambda:self.on_movement_key("w"), 
+                "s" : lambda:self.on_movement_key("s"),
+                "a" : lambda:self.on_movement_key("a"),
+                "d" : lambda:self.on_movement_key("d"),
+                " " : self.capture,
+                "q":self.toggle_cont_capturing,
+                "e":self.toggle_cont_capturing_mode,
+                "r":self.display
+            }
+        )
+        kb.start()
+        # keyboard.add_hotkey("w", lambda:self.on_movement_key("w"))
+        # keyboard.add_hotkey("s", lambda:self.on_movement_key("s"))
+        # keyboard.add_hotkey("a", lambda:self.on_movement_key("a"))
+        # keyboard.add_hotkey("d", lambda:self.on_movement_key("d"))
+        # keyboard.add_hotkey("space", self.capture)
+        # keyboard.add_hotkey("q", self.toggle_cont_capturing)
+        # keyboard.add_hotkey("e", self.toggle_cont_capturing_mode)
+        # keyboard.add_hotkey("r", self.display)
         
         self.key_direction_match = {
             "w":self.up, 
@@ -51,12 +65,27 @@ class Capture:
             "d":self.right
         }
         
+        cont = False
+        
+        def on_continue(key):
+            nonlocal cont
+            if key == pynput.keyboard.Key.shift:
+                cont = True
+                        
+        l = pynput.keyboard.Listener(on_continue)
+        l.start()
         while True:
             while self.cont_capturing:
                 if not self.cont_capturing_direction:
                     continue
                 self.key_direction_match[self.cont_capturing_direction]()
-                keyboard.wait("shift")
+                
+                
+                while not cont:
+                    pass
+                
+                cont = False
+                # keyboard.wait("shift")
                 self.capture()
                 time.sleep(1)
     
