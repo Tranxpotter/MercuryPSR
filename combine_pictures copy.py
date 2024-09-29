@@ -2,7 +2,7 @@ from PIL import Image
 import os
 
 
-filenames = os.listdir("data_files/north_pole_radio")
+filenames = os.listdir("data_files/north_pole_PSR")
 
 SCREEN_SIZE = SCREEN_WIDTH, SCREEN_HEIGHT = (2560, 1440)
 
@@ -34,21 +34,23 @@ for filename in filenames:
 
 print(max_row, min_row, max_column, min_column)
 
-size = (max_column - min_column + 1) * CAPTURE_WIDTH, (max_row - min_row + 1) * CAPTURE_HEIGHT
+size = (max_row - min_row + 1) * CAPTURE_HEIGHT, (max_column - min_column + 1) * CAPTURE_WIDTH
 print(size)
-background = Image.new("RGB", size, "white")
+# background = Image.new("RGB", size, "white")
 
+max_img_x, max_img_y = 0, 0
 for filename in filenames:
     info, ext = filename.split(".")
     row, column = map(int, info.split("_"))
     row, column = row - min_row, column - min_column
     pos = column * CAPTURE_WIDTH, row * CAPTURE_HEIGHT
+    max_img_x = max(max_img_x, pos[0])
+    max_img_y = max(max_img_y, pos[1])
+#     with Image.open(f"data_files/north_pole_radio/{filename}") as img:
+#         background.paste(img, pos)
+print(max_img_x, max_img_y)
+# background.save("test.png")
 
-    with Image.open(f"data_files/north_pole_radio/{filename}") as img:
-        background.paste(img, pos)
-
-background.save("test.png")
 
 
-
--4, 12
+-1, 5

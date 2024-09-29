@@ -2,7 +2,7 @@ import os
 import math
 from PIL import Image
 
-FILE_PATH = "data_files/south_pole/"
+FILE_PATH = "data_files/south_pole_PSR/"
 
 SCROLL = 192
 HORIZONTAL_SCROLL = 9

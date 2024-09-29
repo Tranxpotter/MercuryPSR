@@ -2,7 +2,7 @@ import pyautogui
 import keyboard
 import time
 
-save_path = "data_files/south_pole/"
+save_path = "data_files/north_pole_radio/"
 
 # Usage: Normal mode - WASD for movement, space to capture screen
 #        Continuous mode - WASD for changing movement direction, shift to capture and move
