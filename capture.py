@@ -2,7 +2,7 @@ import pyautogui
 import keyboard
 import time
 
-save_path = "data_files/north_pole_radio/"
+save_path = "data_files/south_pole_radio3/"
 
 # Usage: Normal mode - WASD for movement, space to capture screen
 #        Continuous mode - WASD for changing movement direction, shift to capture and move
@@ -63,6 +63,7 @@ class Capture:
     
     
     def toggle_cont_capturing_mode(self):
+        pyautogui.moveTo(100, 100)
         self.cont_capturing_mode = not self.cont_capturing_mode
     
     def toggle_cont_capturing(self):
@@ -102,7 +103,7 @@ class Capture:
     
     
     
-    
+
 
 
 

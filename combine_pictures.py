@@ -1,8 +1,8 @@
 from PIL import Image
 import os
 
-
-filenames = os.listdir("data_files/north_pole_radio")
+folder_name = "north_pole_radio"
+filenames = os.listdir(f"data_files/{folder_name}")
 
 SCREEN_SIZE = SCREEN_WIDTH, SCREEN_HEIGHT = (2560, 1440)
 
@@ -44,11 +44,10 @@ for filename in filenames:
     row, column = row - min_row, column - min_column
     pos = column * CAPTURE_WIDTH, row * CAPTURE_HEIGHT
 
-    with Image.open(f"data_files/north_pole_radio/{filename}") as img:
+    with Image.open(f"data_files/{folder_name}/{filename}") as img:
         background.paste(img, pos)
 
-background.save("test.png")
+background.save("data_files/full_images/north_pole_radio.png")
 
 
 
--4, 12
