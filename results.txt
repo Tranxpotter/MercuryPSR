@@ -1,4 +1,4 @@
-North Pole
+North Pole PSR (Final)
 Ring: 89, result: 5686289, time spent: 6.18480658531189
 Ring: 88, result: 20246825, time spent: 13.037174701690674
 Ring: 87, result: 35313872, time spent: 19.89671778678894
@@ -9,7 +9,6 @@ Ring: 83, result: 84427018, time spent: 59.3155951499939
 Ring: 82, result: 94972759, time spent: 74.0500214099884
 Ring: 81, result: 102718860, time spent: 93.36154985427856
 Ring: 80, result: 109604553, time spent: 105.11168074607849
-
 
 Ring: 89, result: 5686289, area: 1553524759 m^2
 Ring: 88, result: 20246825, area: 5531541561 m^2
@@ -23,7 +22,16 @@ Ring: 81, result: 102718860, area: 28063345399 m^2
 Ring: 80, result: 109604553, area: 29944553787 m^2
 
 
-South Pole
+
+
+North Pole Radio
+
+
+
+
+
+
+South Pole PSR (First Iteration)
 Ring: 89, result: 2693399, area: 735851103.0667303, time spent: 8.503651857376099
 Ring: 88, result: 11123779, area: 3039076292.602964, time spent: 28.777647256851196
 Ring: 87, result: 24177331, area: 6605376955.126015, time spent: 49.56983017921448
@@ -51,7 +59,56 @@ Ring: 80, result: 117315460, area: 32051215080.937088, time spent: 73.5932519435
 thes 2 methods' accuracy was done, it was simply a choice by time of execution and that cumulative may have less floating point error
 
 
+South Pole PSR (Final)
+Ring: 89, result: 2815945, area: 769331329.8271974, time spent: 2.372166395187378
+Ring: 88, result: 13739240, area: 3753634314.595997, time spent: 7.898134708404541
+Ring: 87, result: 38176984, area: 10430157502.902805, time spent: 11.966866731643677
+Ring: 86, result: 51878350, area: 14173444436.855404, time spent: 17.939794301986694
+Ring: 85, result: 67490345, area: 18438725496.892284, time spent: 23.216740369796753
+Ring: 84, result: 81426493, area: 22246156136.875893, time spent: 31.981481790542603
+Ring: 83, result: 91742620, area: 25064577556.177853, time spent: 41.32169532775879
+Ring: 82, result: 101452810, area: 27717453725.838394, time spent: 51.71258330345154
+Ring: 81, result: 110631932, area: 30225239259.613407, time spent: 62.32141065597534
+Ring: 80, result: 117296136, area: 32045935660.1325, time spent: 75.24434924125671
 
--8 0
 
-19 0
+
+
+South Pole Radio (1st Iteration)
+Ring: 89, result: 3446054, area: 941480499.9658492, time spent: 3.0007922649383545
+Ring: 88, result: 14922045, area: 4076783006.62523, time spent: 7.801698923110962
+Ring: 87, result: 33180670, area: 9065137627.211254, time spent: 11.68124008178711
+Ring: 86, result: 43851383, area: 11980433850.146845, time spent: 17.093324184417725
+Ring: 85, result: 50845837, area: 13891356328.119661, time spent: 22.92102861404419
+Ring: 84, result: 60340986, area: 16485482139.19814, time spent: 31.88499426841736
+Ring: 83, result: 68076098, area: 18598756369.100468, time spent: 39.51381778717041
+Ring: 82, result: 75965080, area: 20754068711.153606, time spent: 74.89653611183167
+Ring: 81, result: 84431296, area: 23067084488.764423, time spent: 63.06430268287659
+Ring: 80, result: 90599601, area: 24752298613.48268, time spent: 75.87574219703674
+
+-> Time difference weird, calc again
+Ring: 89, result: 3446054, area: 941480499.9658492, time spent: 3.0711417198181152
+Ring: 88, result: 14922045, area: 4076783006.62523, time spent: 7.697939395904541
+Ring: 87, result: 33180670, area: 9065137627.211254, time spent: 11.064689636230469
+Ring: 86, result: 43851383, area: 11980433850.146845, time spent: 16.423176765441895
+Ring: 85, result: 50845837, area: 13891356328.119661, time spent: 22.287275552749634
+Ring: 84, result: 60340986, area: 16485482139.19814, time spent: 30.566163063049316
+Ring: 83, result: 68076098, area: 18598756369.100468, time spent: 38.566452503204346
+Ring: 82, result: 75965080, area: 20754068711.153606, time spent: 49.654035329818726
+Ring: 81, result: 84431296, area: 23067084488.764423, time spent: 60.50725340843201
+Ring: 80, result: 90599601, area: 24752298613.48268, time spent: 74.0352292060852
+-> Same results.
+
+South Pole Radio (Final)
+Ring: 89, result: 3446054, area: 941480499.9658492, time spent: 2.9945271015167236
+Ring: 88, result: 14922045, area: 4076783006.62523, time spent: 8.32020902633667
+Ring: 87, result: 33185102, area: 9066348473.464926, time spent: 13.216333150863647
+Ring: 86, result: 43851383, area: 11980433850.146845, time spent: 18.40815234184265
+Ring: 85, result: 50845837, area: 13891356328.119661, time spent: 23.70826768875122
+Ring: 84, result: 60340986, area: 16485482139.19814, time spent: 32.781957387924194
+Ring: 83, result: 68076098, area: 18598756369.100468, time spent: 39.32961440086365
+Ring: 82, result: 75965080, area: 20754068711.153606, time spent: 50.95250177383423
+Ring: 81, result: 84431296, area: 23067084488.764423, time spent: 61.55984282493591
+Ring: 80, result: 90599601, area: 24752298613.48268, time spent: 75.96800208091736
+
+-1 -3 left

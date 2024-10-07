@@ -2,7 +2,7 @@ import os
 import math
 from PIL import Image
 
-FILE_PATH = "data_files/south_pole_PSR/"
+FILE_PATH = "data_files/south_pole_radio/"
 
 SCROLL = 192
 HORIZONTAL_SCROLL = 9
@@ -14,19 +14,19 @@ CAPTURE_SIZE = CAPTURE_WIDTH, CAPTURE_HEIGHT = (SCROLL * HORIZONTAL_SCROLL, SCRO
 #           While cord is (x, y)
 
 CENTER_IMAGE = (0, 0)
-CENTER_CORD = (765, 740)
+CENTER_CORD = (647, 629)
 
 RING_INFO = {
-    89:((-2, 0), (805, 875)),
-    88:((-4, 0), (799, 1007)),
-    87:((-6, 0), (955, 1142)),
-    86:((-8, 0), (1125, 1277)),
-    85:((-9, 0), (933, 56)), #Uses 85(1) as marker
-    84:((-11, 0), (877, 183)),
-    83:((-13, 0), (851, 307)),
-    82:((-15, 0), (1150, 433)),
-    81:((-17, 0), (935, 550)),
-    80:((-19, 0), (939, 665))
+    89:((-2, 0), (688, 763)),
+    88:((-4, 0), (681, 895)),
+    87:((-6, 0), (838, 1030)),
+    86:((-8, 0), (1007, 1165)),
+    85:((-10, 0), (912, 1290)), # Uses 85(2) as marker
+    84:((-11, 0), (759, 71)),
+    83:((-13, 0), (734, 195)),
+    82:((-15, 0), (1032, 320)),
+    81:((-17, 0), (818, 438)),
+    80:((-19, 0), (821, 553))
 }
 
 

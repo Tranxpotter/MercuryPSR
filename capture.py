@@ -2,11 +2,12 @@ import pyautogui
 import keyboard
 import time
 
-save_path = "data_files/south_pole_radio3/"
+save_path = "data_files/north_pole_radio2/"
 
 # Usage: Normal mode - WASD for movement, space to capture screen
 #        Continuous mode - WASD for changing movement direction, shift to capture and move
 #        Press E to switch betweeen normal and continuous mode, Press Q to toggle the continuous capture
+#        Press R to print the current row and column
 
 pyautogui.FAILSAFE = False
 
